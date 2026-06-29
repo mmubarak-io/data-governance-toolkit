@@ -22,6 +22,7 @@ All notable changes to this toolkit are documented here. Format loosely follows 
 - `DPIA-template.docx` — fillable, branded, with header/footer and "not legal advice" notice.
 
 ### Added (polish)
+- ArchiMate diagram exported to PNG + SVG (`toolkit-overview.png` / `.svg`) and embedded in README so it previews inline on GitHub; `.drawio` kept as editable source.
 - README screenshots (classification matrix + filled ROPA register).
 - `.gitignore` (excludes lock files, OS cruft, and local-only notes).
 - Pre-launch verification audit passed: shipped wording reviewed, `rag-with-guardrails` references marked as *(planned)*, synthetic data only and regulatory accuracy confirmed.

@@ -27,7 +27,11 @@ Plus a [frameworks crosswalk](docs/frameworks-crosswalk.md) (GDPR ↔ UAE PDPL �
 
 ## Architecture / how the pieces fit
 
-The toolkit models a small governance operating model: classification underpins everything, the ROPA records what you process, the DPIA assesses high-risk processing, and the AI risk checklist gates AI systems before they touch data. See [`assets/architecture/toolkit-overview.drawio`](assets/architecture/toolkit-overview.drawio) (ArchiMate notation — open in [draw.io](https://app.diagrams.net) or the VS Code Draw.io extension).
+The toolkit models a small governance operating model: classification underpins everything, the ROPA records what you process, the DPIA assesses high-risk processing, and the AI risk checklist gates AI systems before they touch data.
+
+![Toolkit operating model (ArchiMate)](assets/architecture/toolkit-overview.png)
+
+*Editable source: [`toolkit-overview.drawio`](assets/architecture/toolkit-overview.drawio) (open in [draw.io](https://app.diagrams.net) or the VS Code Draw.io extension).*
 
 ## Preview
 
