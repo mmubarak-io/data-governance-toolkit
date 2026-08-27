@@ -2,7 +2,7 @@
 
 **Practical, ready-to-use data-governance templates for regulated teams — bilingual (English now, العربية next).**
 
-> Built for the deadline you're actually facing. The **UAE PDPL** Executive Regulations are in force, with organisations required to comply by **1 January 2027**, and the **EU AI Act** high-risk obligations phase in toward **December 2027**. This toolkit gives data leads, DPOs, and engineers the operational artefacts those regimes ask for — ROPA, DPIA, data classification, and an AI-system risk checklist — as fill-in-the-blanks documents you can use on Monday.
+> Built for the compliance reality you're actually facing. The **UAE PDPL** is in force and its Executive Regulations are sharpening what compliance requires, with the UAE Data Office issuing guidance and enforcement ramping up; the **EU AI Act**'s high-risk obligations are phasing in. This toolkit gives data leads, DPOs, and engineers the operational artefacts those regimes ask for — ROPA, DPIA, data classification, and an AI-system risk checklist — as fill-in-the-blanks documents you can use on Monday.
 
 This is the operational side of governance: not the law, but the paperwork the law expects you to have.
 
@@ -51,7 +51,7 @@ The ROPA register with the synthetic **SoukNova** example filled in — note how
 
 ## Frameworks covered
 
-`GDPR (EU 2016/679)` · `UAE PDPL (Federal Decree-Law No. 45 of 2021 + 2026 Executive Regulations)` · `EU AI Act (Regulation 2024/1689)`
+`GDPR (EU 2016/679)` · `UAE PDPL (Federal Decree-Law No. 45 of 2021 + Executive Regulations)` · `EU AI Act (Regulation 2024/1689)`
 
 See the [crosswalk](docs/frameworks-crosswalk.md) for how a single artefact satisfies obligations across regimes.
 
@@ -69,4 +69,4 @@ This toolkit is **not legal advice**. It is a set of starting-point templates. A
 
 ---
 
-*Maintained by [Mohamed](https://github.com/MohamedMubarak123). Building data & AI that survives an audit, in regulated industries.*
+*Maintained by [Mohamed](https://github.com/mmubarak-io). Building data & AI that survives an audit, in regulated industries.*

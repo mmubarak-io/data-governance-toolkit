@@ -6,9 +6,9 @@ A quick map of how the toolkit's artefacts satisfy obligations across the three 
 
 | | **GDPR** | **UAE PDPL** | **EU AI Act** |
 |---|---|---|---|
-| Instrument | Regulation (EU) 2016/679 | Federal Decree-Law No. 45 of 2021 + Executive Regulations (2026) | Regulation (EU) 2024/1689 |
+| Instrument | Regulation (EU) 2016/679 | Federal Decree-Law No. 45 of 2021 + Executive Regulations | Regulation (EU) 2024/1689 |
 | Scope | Personal data of people in the EU | Personal data of UAE residents (federal; free zones like DIFC/ADGM have their own laws) | AI systems placed on the EU market |
-| Key deadline | In force since 2018 | Compliance expected by **1 Jan 2027** | High-risk obligations phasing toward **Dec 2027** |
+| Status | In force since 2018 | In force; Executive Regulations tightening compliance now | High-risk obligations phasing in (toward late 2027) |
 | Regulator | National DPAs | UAE Data Office | National market-surveillance + EU AI Office |
 
 ## Obligation → artefact map
@@ -29,8 +29,17 @@ A quick map of how the toolkit's artefacts satisfy obligations across the three 
 
 ## How to read it
 
-- **If you operate in the UAE**, the PDPL is your anchor and the Jan 2027 deadline is the forcing function — but building to GDPR-level artefacts means you're ready for both, plus EU customers.
+- **If you operate in the UAE**, the PDPL is your anchor — its Executive Regulations are tightening compliance and enforcement is ramping up — but building to GDPR-level artefacts means you're ready for both, plus EU customers.
 - **If you build AI**, the EU AI Act adds obligations *on top of* data-protection law; an AI system handling personal data needs the privacy artefacts (ROPA, DPIA) **and** the AI controls (checklist).
 - **Free zones:** DIFC (DP Law 2020) and ADGM have their own data-protection regimes that broadly track GDPR; check which applies to your entity.
 
 > Always validate against the current text of each instrument and qualified counsel. See the [glossary](glossary.md) for terms.
+
+## Sources
+
+- UAE Government — [Data protection laws](https://u.ae/en/about-the-uae/digital-uae/data/data-protection-laws) (official portal)
+- [Personal Data Protection Law — Federal Decree-Law No. 45 of 2021](https://ai.gov.ae/personal-data-protection-law/) (official)
+- DLA Piper — [Data Protection Laws of the World: UAE](https://www.dlapiperdataprotection.com/countries/uae-general/law.html)
+- European Commission — [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
+
+Regulatory timelines are evolving; treat specific dates as subject to change and confirm against primary sources.

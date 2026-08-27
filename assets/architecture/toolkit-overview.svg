@@ -15,11 +15,11 @@
     .tiny { font-size:10px; fill:#666; }
   </style>
 
-  <text x="30" y="30" font-size="17" font-weight="bold" fill="#1F3A5F">Data Governance Toolkit — Operating Model (ArchiMate)</text>
+  <text x="30" y="30" font-size="17" font-weight="bold" fill="#1F3A5F">Data Governance Toolkit - Operating Model</text>
 
   <!-- Business Service -->
   <rect x="30" y="50" width="840" height="50" rx="22" class="biz"/>
-  <text x="450" y="80" text-anchor="middle" class="lblb">Data Governance — compliance that survives an audit</text>
+  <text x="450" y="80" text-anchor="middle" class="lblb">Data Governance - compliance that survives an audit</text>
 
   <!-- helper: component icon lugs drawn per component below -->
 
