@@ -25,6 +25,7 @@ A quick map of how the toolkit's artefacts satisfy obligations across the three 
 | Transparency about AI | - | - | Limited-risk transparency duties | AI Risk Checklist §3 |
 | Human oversight of AI | Art. 22 (automated decisions) | - | High-risk requirement | AI Risk Checklist §4 |
 | Logging / record-keeping for AI | - | - | High-risk requirement | AI Risk Checklist §6 |
+| Notify a personal-data breach | Arts. 33-34 (authority within 72h; individuals if high risk) | Notify the UAE Data Office; inform individuals where their data is prejudiced | Serious-incident reporting for high-risk systems | **Breach Response** |
 | Appoint a DPO | Art. 37 (where required) | Required in defined cases | - | ROPA header |
 
 ## How to read it

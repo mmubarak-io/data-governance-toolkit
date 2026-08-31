@@ -18,6 +18,8 @@ tiers:
       access_logging: false
       external_sharing: allowed
       cross_border: allowed
+      retention_default: as-needed
+      disposal: standard
 
   - id: internal
     name: Internal
@@ -31,6 +33,8 @@ tiers:
       access_logging: optional
       external_sharing: approval-required
       cross_border: allowed
+      retention_default: org-defined   # matrix suggests e.g. 3 years
+      disposal: standard
 
   - id: confidential
     name: Confidential
@@ -44,6 +48,8 @@ tiers:
       access_logging: true
       external_sharing: contract-and-safeguard-required
       cross_border: allowed-with-safeguard
+      retention_default: per-purpose-see-ropa
+      disposal: secure-deletion
 
   - id: restricted
     name: Restricted
@@ -57,6 +63,8 @@ tiers:
       access_logging: immutable
       external_sharing: prohibited-unless-authorised
       cross_border: restricted-assess-first
+      retention_default: minimum-necessary-documented
+      disposal: verified-secure-destruction
 
 # Data that forces a minimum tier regardless of context (GCC-aware).
 # `regex` values are illustrative patterns for tooling, not validated PII rules.

@@ -2,6 +2,8 @@
 
 The most useful part of a DPIA is knowing *when* you need one. This guide gives you the trigger test, then how to complete the [template](DPIA-template.md).
 
+> **Not legal advice** - the trigger test is orientation, not a legal determination. Confirm whether a DPIA is required with your DPO or counsel.
+
 ## Do you even need a DPIA? (the trigger test)
 
 A DPIA is required when processing is **likely to result in a high risk** to individuals. Run one if **any** of these apply:

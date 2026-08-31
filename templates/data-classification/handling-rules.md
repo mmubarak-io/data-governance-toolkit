@@ -2,6 +2,8 @@
 
 What each classification means in day-to-day practice. Adapt the `[bracketed]` specifics to your tooling and jurisdiction.
 
+> **Not legal advice** - these are starting-point controls. Confirm what your own regulator and contracts require.
+
 ## Public
 
 - **Storage:** any approved location.

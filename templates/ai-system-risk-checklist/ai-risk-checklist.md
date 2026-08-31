@@ -2,7 +2,7 @@
 
 A pre-deployment checklist for any AI/ML or LLM system that touches personal or regulated data. It exists because "you can't just point an LLM at customer data" - doing so safely in a regulated environment requires specific controls that a generic DPIA won't prompt for.
 
-Each item is tagged with the **EU AI Act** risk dimension it speaks to. Items marked **[High-risk]** map to obligations that apply to high-risk systems (Annex III), whose main deadline now phases in toward **2 December 2027**. Items marked **[Transparency]** map to the limited-risk transparency duties already in effect.
+Each item is tagged with the **EU AI Act** risk dimension it speaks to. Items marked **[High-risk]** map to obligations that apply to high-risk systems (Annex III), whose main deadline is currently expected to phase in toward **2 December 2027** (provisional; see the [guide](ai-risk-guide.md)). Items marked **[Transparency]** map to the limited-risk transparency duties already in effect.
 
 > Work top to bottom. Any unchecked box is a risk you're accepting - record why. Run this **alongside** a [DPIA](../dpia/DPIA-template.md), not instead of one.
 

@@ -1,0 +1,28 @@
+name: Correction or stale reference
+description: A template says something wrong, out of date, or misleading about a regulation.
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks. Corrections against the regulations are the most valuable contribution here."
+  - type: input
+    id: file
+    attributes:
+      label: File
+      placeholder: docs/frameworks-crosswalk.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the line if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: A link to the primary source (regulation text, regulator guidance). Secondary sources are fine as supporting context.
+    validations:
+      required: true

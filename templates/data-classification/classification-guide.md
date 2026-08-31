@@ -2,6 +2,8 @@
 
 How to use the [classification matrix](classification-matrix.md) in practice.
 
+> **Not legal advice.** This is a practitioner's method, not a legal opinion. Validate the result with your DPO or counsel.
+
 ## Why classify
 
 Classification is the single decision that drives the rest of your governance. Once a dataset is tagged Confidential or Restricted, its access model, encryption, retention, transfer rules, and whether it needs a DPIA all follow. Skipping it means making those decisions ad hoc, inconsistently, forever.

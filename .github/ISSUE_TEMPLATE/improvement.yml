@@ -1,0 +1,25 @@
+name: Better field, phrasing, or example
+description: Suggest a sharper field, clearer guidance, or a new worked example.
+labels: ["improvement"]
+body:
+  - type: input
+    id: artefact
+    attributes:
+      label: Which artefact
+      placeholder: ROPA / DPIA / classification / AI risk checklist / breach response
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you change
+      description: What does the current version miss in practice?
+    validations:
+      required: true
+  - type: checkboxes
+    id: ground-rules
+    attributes:
+      label: Ground rules
+      options:
+        - label: This contains no content derived from a specific organisation's internal documents, and no real personal data.
+          required: true

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Policy enforced in CI
+    url: https://github.com/mmubarak-io/ai-compliance-gates
+    about: For the executable half - CI gates that enforce these policies - use the ai-compliance-gates repo.

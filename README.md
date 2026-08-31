@@ -58,6 +58,12 @@ See the [crosswalk](docs/frameworks-crosswalk.md) for how a single artefact sati
 
 English templates are first. Arabic (العربية) versions ship as a parallel `-ar` file beside each English file - in progress. ⭐ the repo to follow the Arabic release.
 
+## Contributing
+
+Corrections against the regulations are the most useful contribution here - open an issue with the source. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the ground rules, and [`SECURITY.md`](SECURITY.md) for what to report privately instead (anything that looks like real personal data).
+
+Repository consistency is checked in CI by [`scripts/check-repo.py`](scripts/check-repo.py): internal links, YAML validity, disclaimer coverage, an example per artefact, and that the policy IDs here still line up with the gates in `ai-compliance-gates`.
+
 ## Disclaimer
 
 This toolkit is **not legal advice**. It is a set of starting-point templates. Always validate completed artefacts against the regulations that apply to you and with qualified counsel. See [`DISCLAIMER.md`](DISCLAIMER.md).

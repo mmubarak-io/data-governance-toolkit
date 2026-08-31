@@ -73,3 +73,7 @@ Keep this even for breaches you decide *not* to report - the register itself is 
 | DPO | `[ ]` | `[ ]` |
 | Security | `[ ]` | `[ ]` |
 | Comms / legal | `[ ]` | `[ ]` |
+
+---
+
+> See a fully synthetic worked example in [`examples/filled-breach-souknova.md`](../../examples/filled-breach-souknova.md), and the [guide](breach-response-guide.md) for the notification decision.

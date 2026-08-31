@@ -2,6 +2,8 @@
 
 How to complete the [ROPA template](ROPA-template.md) without it becoming shelfware.
 
+> **Not legal advice** - practical guidance on the fields, not a legal opinion on what your register must contain.
+
 ## What a ROPA is for
 
 It answers, on demand, "what personal data do you hold, why, and how is it protected?" Regulators ask for it first because it reveals whether you actually understand your own processing. A good ROPA is also the map you use for breach response, DPIA scoping, and data-subject requests.

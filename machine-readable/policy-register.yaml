@@ -1,9 +1,16 @@
 # Policy register (schema v1)
 # The single source of truth linking each governance policy to (a) the law it
 # implements, (b) the toolkit artefact that DOCUMENTS it, and (c) the executable
-# check that could ENFORCE it. Policy IDs are shared with the companion repo
+# check that ENFORCES it. Policy IDs are shared with the companion repo
 # `ai-compliance-gates` so the "policy as documents" and "policy as code" halves
 # line up. Not legal advice.
+#
+# enforcement:
+#   enforced - a check in `ai-compliance-gates` emits this exact policy_id
+#   planned  - documented here; no gate emits this ID yet
+#
+# `documented_by` values are repo-relative paths only, so tooling can resolve
+# them directly. Anything narrower than a file goes in `documented_by_note`.
 
 schema: data-governance-toolkit/policy-register/v1
 
@@ -14,6 +21,7 @@ policies:
     control: TLS enforced; encryption at rest; PII blocked before it enters a pipeline/model
     documented_by: ["templates/data-classification/handling-rules.md", "templates/ropa/"]
     enforced_by: ["ai-compliance-gates: pii-scan", "ai-compliance-gates: policy-check (TLS, https-only)"]
+    enforcement: enforced
 
   - policy_id: POL-PRIV-002
     name: Data retention & storage limitation
@@ -21,13 +29,37 @@ policies:
     control: Retention periods defined per purpose; disposal on trigger; audit-log retention
     documented_by: ["templates/ropa/", "templates/data-classification/handling-rules.md"]
     enforced_by: ["ai-compliance-gates: policy-check (retention rules)"]
+    enforcement: enforced
 
   - policy_id: POL-PRIV-003
     name: Data residency / cross-border transfer
     regulation: ["UAE PDPL Art. 22-23", "GDPR Ch. V"]
     control: Transfers only to approved regions or under a documented safeguard
-    documented_by: ["templates/ropa/ (transfer field)", "docs/frameworks-crosswalk.md"]
+    documented_by: ["templates/ropa/", "docs/frameworks-crosswalk.md"]
+    documented_by_note: "ROPA field 11 (cross-border transfers)"
     enforced_by: ["ai-compliance-gates: policy-check (region allow-list)"]
+    enforcement: enforced
+
+  - policy_id: POL-PRIV-004
+    name: Audit logging & records of processing
+    regulation: ["UAE PDPL Art. 20", "GDPR Art. 30"]
+    control: Processing recorded (ROPA); access and AI query/response logged
+    documented_by: ["templates/ropa/", "templates/ai-system-risk-checklist/"]
+    documented_by_note: "AI-System Risk Checklist section 6 (logging & auditability)"
+    enforced_by: ["ai-compliance-gates: policy-check (diagnostic settings)", "ai-compliance-gates: evidence-pack"]
+    enforcement: enforced
+
+  - policy_id: POL-PRIV-005
+    name: Personal-data breach notification
+    regulation: ["GDPR Art. 33", "GDPR Art. 34", "UAE PDPL Art. 9"]
+    control: >-
+      Breaches triaged on discovery; supervisory authority / UAE Data Office notified
+      without undue delay (GDPR: within 72h of awareness where feasible); affected
+      individuals notified where the risk to them is high; every breach recorded in the
+      register whether reportable or not (GDPR Art. 33(5))
+    documented_by: ["templates/breach-response/", "examples/filled-breach-souknova.md"]
+    enforced_by: []
+    enforcement: planned
 
   - policy_id: POL-SEC-001
     name: No public exposure
@@ -35,6 +67,7 @@ policies:
     control: Public network access disabled; private access only
     documented_by: ["templates/data-classification/handling-rules.md"]
     enforced_by: ["ai-compliance-gates: policy-check (public_network_access)"]
+    enforcement: enforced
 
   - policy_id: POL-SEC-002
     name: Access control
@@ -42,13 +75,17 @@ policies:
     control: Role-based access; least privilege; secrets not in plaintext
     documented_by: ["templates/data-classification/classification-matrix.md"]
     enforced_by: ["ai-compliance-gates: policy-check (RBAC, shared-key disabled)"]
+    enforcement: enforced
 
-  - policy_id: POL-PRIV-004
-    name: Audit logging & records of processing
-    regulation: ["UAE PDPL Art. 20", "GDPR Art. 30"]
-    control: Processing recorded (ROPA); access and AI query/response logged
-    documented_by: ["templates/ropa/", "templates/ai-system-risk-checklist/ (sec. 6)"]
-    enforced_by: ["ai-compliance-gates: policy-check (diagnostic settings)", "ai-compliance-gates: evidence-pack"]
+  - policy_id: POL-GOV-001
+    name: Compliance tagging of governed resources
+    regulation: ["GDPR Art. 5(2)", "UAE PDPL Art. 20"]
+    control: >-
+      Every governed resource declares its compliance tags (owner, classification tier,
+      data category) so an auditor can trace a resource back to the policy that covers it
+    documented_by: ["templates/data-classification/classification-matrix.md", "templates/ropa/"]
+    enforced_by: ["ai-compliance-gates: policy-check (compliance_tags)"]
+    enforcement: enforced
 
   - policy_id: POL-GOV-002
     name: AI system documentation & risk
@@ -56,6 +93,7 @@ policies:
     control: AI documentation complete; PII redacted before the model; human oversight
     documented_by: ["templates/ai-system-risk-checklist/", "templates/dpia/"]
     enforced_by: ["ai-compliance-gates: model-card-check", "ai-compliance-gates: pii-scan"]
+    enforcement: planned
 
   - policy_id: POL-GOV-003
     name: Accountability & evidence
@@ -63,3 +101,4 @@ policies:
     control: Every run/decision leaves an auditor-facing record
     documented_by: ["templates/breach-response/", "examples/"]
     enforced_by: ["ai-compliance-gates: evidence-pack"]
+    enforcement: planned

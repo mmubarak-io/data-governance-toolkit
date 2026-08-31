@@ -22,5 +22,9 @@ Plain-language definitions of the terms used across the toolkit. Summaries for o
 - **High-risk AI system** - under the EU AI Act, an AI system in a sensitive domain (Annex III) subject to the heaviest obligations.
 - **GPAI (General-Purpose AI)** - foundation/large models subject to provider transparency duties under the EU AI Act.
 - **RAG (Retrieval-Augmented Generation)** - an architecture where an LLM answers using retrieved source documents; relevant to citation tracking and audit logging.
+- **Personal-data breach** - a breach of security leading to accidental or unlawful destruction, loss, alteration, or unauthorised disclosure of or access to personal data. A lost laptop or a mis-sent email counts, not only an intrusion.
+- **Supervisory authority** - the regulator a breach or complaint is reported to (a national DPA under GDPR; the UAE Data Office under PDPL).
 - **PDPL** - the UAE Personal Data Protection Law (Federal Decree-Law No. 45 of 2021).
+- **Executive Regulations** - the implementing rules that put a UAE federal law into operational effect; the PDPL's set out how its obligations are applied.
 - **Data Office** - the UAE federal authority overseeing PDPL.
+- **DIFC / ADGM** - UAE financial free zones with their own data-protection laws (DIFC DP Law 2020; ADGM regulations) that broadly track GDPR. Check which regime applies to your entity.

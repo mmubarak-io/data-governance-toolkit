@@ -2,7 +2,7 @@
 
 A four-tier classification scheme. Classification is the backbone of governance: it drives access, storage, retention, and the controls in every other template here. Classify the data **once**, and the ROPA, DPIA, and handling rules all inherit the answer.
 
-> Replace the `[bracketed]` examples with your organisation's own. Keep the tier definitions stable - they should rarely change.
+> Replace the `[bracketed]` examples with your organisation's own. Keep the tier definitions stable - they should rarely change. **Not legal advice** - validate the tiers against the regulations that apply to you.
 
 ## The four tiers
 
