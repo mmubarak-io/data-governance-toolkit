@@ -1,89 +1,118 @@
-<mxfile host="app.diagrams.net" type="device">
-  <diagram name="Toolkit Overview" id="dgt-overview">
-    <mxGraphModel dx="900" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="640" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <!-- Title -->
-        <mxCell id="title" value="Data Governance Toolkit - Operating Model" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="8" width="810" height="28" as="geometry" />
-        </mxCell>
-
-        <!-- Business Service -->
-        <mxCell id="svc" value="Data Governance (compliance that survives an audit)" style="sketch=0;html=1;whiteSpace=wrap;rounded=1;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="40" y="56" width="810" height="56" as="geometry" />
-        </mxCell>
-
-        <!-- Business Processes -->
-        <mxCell id="p1" value="Classify Data" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="50" y="190" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="p2" value="Maintain ROPA" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="250" y="190" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="p3" value="Conduct DPIA" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="450" y="190" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="p4" value="Assess AI-System Risk" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="650" y="190" width="170" height="70" as="geometry" />
-        </mxCell>
-
-        <!-- Application Components (the templates) -->
-        <mxCell id="c1" value="Classification Matrix" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="50" y="330" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="c2" value="ROPA Register" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="250" y="330" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="c3" value="DPIA Template" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="450" y="330" width="170" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="c4" value="AI-System Risk Checklist" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="650" y="330" width="170" height="70" as="geometry" />
-        </mxCell>
-
-        <!-- Supporting Components -->
-        <mxCell id="cx" value="Frameworks Crosswalk&#10;(GDPR · PDPL · EU AI Act)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="250" y="470" width="170" height="64" as="geometry" />
-        </mxCell>
-        <mxCell id="gl" value="Glossary" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=11;" vertex="1" parent="1">
-          <mxGeometry x="450" y="470" width="170" height="64" as="geometry" />
-        </mxCell>
-
-        <!-- Serving: processes -> service -->
-        <mxCell id="e_p1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.25;entryY=1;" edge="1" parent="1" source="p1" target="svc"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_p2" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.42;entryY=1;" edge="1" parent="1" source="p2" target="svc"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_p3" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.58;entryY=1;" edge="1" parent="1" source="p3" target="svc"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_p4" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.75;entryY=1;" edge="1" parent="1" source="p4" target="svc"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- Serving: components -> processes -->
-        <mxCell id="e_c1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="c1" target="p1"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_c2" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="c2" target="p2"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_c3" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="c3" target="p3"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_c4" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="c4" target="p4"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- Association: classification underpins ROPA -->
-        <mxCell id="e_c1c2" value="tier feeds" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="c1" target="c2"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- Association: cross-cutting references -->
-        <mxCell id="e_cx" value="references" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="cx" target="c2"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_gl" value="references" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" edge="1" parent="1" source="gl" target="c3"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- Legend -->
-        <mxCell id="lg_box" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=11;align=left;spacingLeft=6;" vertex="1" parent="1">
-          <mxGeometry x="650" y="470" width="200" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="lg_b" value="Business (process / service)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="660" y="494" width="180" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="lg_a" value="Application component (template)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="660" y="524" width="180" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="lg_e1" value="→ serving      - - - association" style="text;html=1;align=left;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="660" y="556" width="190" height="22" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Toolkit Overview" id="dgt-overview">
+        <mxGraphModel dx="1510" dy="1128" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1080" pageHeight="660" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Data Governance Toolkit - Operating Model" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#1F3A5F;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="8" width="990" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="svc" value="Data Governance (compliance that survives an audit)" style="sketch=0;html=1;whiteSpace=wrap;rounded=1;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=serv;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="52" width="990" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1" value="Classify Data" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="140" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" value="Maintain ROPA" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="140" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3" value="Conduct DPIA" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="140" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4" value="Assess AI-System Risk" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="140" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5" value="Respond to Breach" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=proc;archiType=rounded;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="140" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="c1" value="Classification Matrix" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="c2" value="ROPA Register" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="260" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="c3" value="DPIA Template" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="260" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="c4" value="AI-System Risk Checklist" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="260" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="c5" value="Breach Response Playbook" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="260" width="175" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="cx" value="Frameworks Crosswalk&#xa;(GDPR · PDPL · EU AI Act)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="370" width="175" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="gl" value="Glossary" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="370" width="175" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="mr" value="Machine-readable layer&#xa;classification.yaml · policy-register.yaml" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;shape=mxgraph.archimate3.application;appType=data;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="470" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="gates" value="ai-compliance-gates&#xa;CI gates - policy as code (companion repo)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;dashed=1;dashPattern=6 4;shape=mxgraph.archimate3.application;appType=comp;archiType=square;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="470" width="290" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_p1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.2;entryY=1;" parent="1" source="p1" target="svc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_p2" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.35;entryY=1;" parent="1" source="p2" target="svc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_p3" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="p3" target="svc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_p4" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.65;entryY=1;" parent="1" source="p4" target="svc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_p5" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.8;entryY=1;" parent="1" source="p5" target="svc" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c1" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="c1" target="p1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c2" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="c2" target="p2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c3" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="c3" target="p3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c4" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="c4" target="p4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c5" style="endArrow=open;endFill=0;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="c5" target="p5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_c1c2" value="tier feeds" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="c1" target="c2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_cx" value="references" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="cx" target="c2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_gl" value="references" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" parent="1" source="gl" target="c3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_mr" value="YAML twin of" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;fontSize=10;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="c1" target="mr" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_gate" value="shared policy IDs · enforced in CI" style="endArrow=block;endFill=1;html=1;dashed=1;dashPattern=6 4;fontSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="mr" target="gates" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="lg_box" value="Legend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;verticalAlign=top;fontStyle=1;fontSize=11;align=left;spacingLeft=6;" parent="1" vertex="1">
+                    <mxGeometry x="855" y="470" width="175" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="lg_b" value="Business (process / service)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#FFFF99;strokeColor=#000000;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="500" width="155" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="lg_a" value="Application component (template)" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#99FFFF;strokeColor=#000000;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="528" width="155" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="lg_t" value="Machine-readable / policy as code" style="sketch=0;html=1;whiteSpace=wrap;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="556" width="155" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="lg_e1" value="→ serving      - - - association" style="text;html=1;align=left;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="865" y="584" width="165" height="22" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>

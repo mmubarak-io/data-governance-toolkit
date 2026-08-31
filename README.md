@@ -12,7 +12,7 @@ This is the operational side of governance: not the law, but the paperwork the l
 
 - **Data & analytics leads** standing up governance in a regulated or GCC organisation.
 - **DPOs / privacy officers** who need a register and an assessment template that map to GDPR, UAE PDPL, and the EU AI Act.
-- **Engineers** building data and AI systems who need to know what "compliant by design" actually requires.
+- **Engineers** building data and AI systems - the AI-system risk checklist and the machine-readable classification + policy register say what "compliant by design" means in practice, and share policy IDs with the [`ai-compliance-gates`](https://github.com/mmubarak-io/ai-compliance-gates) CI checks.
 
 ## What's inside
 
@@ -31,8 +31,6 @@ Plus a [frameworks crosswalk](docs/frameworks-crosswalk.md) (GDPR â†” UAE PDPL â
 The toolkit models a small governance operating model: classification underpins everything, the ROPA records what you process, the DPIA assesses high-risk processing, and the AI risk checklist gates AI systems before they touch data.
 
 ![Toolkit operating model (ArchiMate)](assets/architecture/toolkit-overview.png)
-
-*Editable source: [`toolkit-overview.drawio`](assets/architecture/toolkit-overview.drawio) (open in [draw.io](https://app.diagrams.net) or the VS Code Draw.io extension).*
 
 ## Preview
 
