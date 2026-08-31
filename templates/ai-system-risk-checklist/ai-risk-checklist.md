@@ -1,10 +1,10 @@
 # AI-System Risk Checklist
 
-A pre-deployment checklist for any AI/ML or LLM system that touches personal or regulated data. It exists because "you can't just point an LLM at customer data" — doing so safely in a regulated environment requires specific controls that a generic DPIA won't prompt for.
+A pre-deployment checklist for any AI/ML or LLM system that touches personal or regulated data. It exists because "you can't just point an LLM at customer data" - doing so safely in a regulated environment requires specific controls that a generic DPIA won't prompt for.
 
 Each item is tagged with the **EU AI Act** risk dimension it speaks to. Items marked **[High-risk]** map to obligations that apply to high-risk systems (Annex III), whose main deadline now phases in toward **2 December 2027**. Items marked **[Transparency]** map to the limited-risk transparency duties already in effect.
 
-> Work top to bottom. Any unchecked box is a risk you're accepting — record why. Run this **alongside** a [DPIA](../dpia/DPIA-template.md), not instead of one.
+> Work top to bottom. Any unchecked box is a risk you're accepting - record why. Run this **alongside** a [DPIA](../dpia/DPIA-template.md), not instead of one.
 
 ## 1. Prohibited-use screen (do this first)
 
@@ -58,4 +58,4 @@ Each item is tagged with the **EU AI Act** risk dimension it speaks to. Items ma
 
 ### From checklist to flagship
 
-Sections 2, 6, and 7 — redaction before the model, citation tracking, full query/response audit logging, and an eval harness — are exactly the requirements a guardrailed RAG implementation must satisfy. This checklist is the spec; a companion reference implementation (`rag-with-guardrails`, *planned*) will be the working proof. See the [AI risk guide](ai-risk-guide.md) for the EU AI Act tier mapping in detail.
+Sections 2, 6, and 7 - redaction before the model, citation tracking, full query/response audit logging, and an eval harness - are exactly the requirements a guardrailed RAG implementation must satisfy. This checklist is the spec; a companion reference implementation (`rag-with-guardrails`, *planned*) will be the working proof. See the [AI risk guide](ai-risk-guide.md) for the EU AI Act tier mapping in detail.

@@ -1,4 +1,4 @@
-# Field Guide — Running a Data Classification
+# Field Guide - Running a Data Classification
 
 How to use the [classification matrix](classification-matrix.md) in practice.
 
@@ -8,7 +8,7 @@ Classification is the single decision that drives the rest of your governance. O
 
 ## The five-minute method
 
-1. **Identify the data element or dataset.** Classify at the most useful granularity — usually a dataset, table, or field group, not individual values.
+1. **Identify the data element or dataset.** Classify at the most useful granularity - usually a dataset, table, or field group, not individual values.
 2. **Find the most sensitive element it contains.** A dataset inherits the tier of its most sensitive field. One IBAN column makes the whole export Restricted.
 3. **Check the special-category and identifier list** in the matrix. Health, biometric, Emirates ID, IBAN, card data, auth secrets → Restricted by default.
 4. **Assign the tier** and record it (in your data catalogue, the ROPA, or a simple register).
@@ -23,6 +23,6 @@ Classification is the single decision that drives the rest of your governance. O
 
 ## How this connects to the rest of the toolkit
 
-- The **ROPA** records a *Classification tier* per processing activity — pulled straight from this exercise.
+- The **ROPA** records a *Classification tier* per processing activity - pulled straight from this exercise.
 - The **DPIA** is typically triggered when Restricted / special-category data is processed at scale.
-- The **AI-System Risk Checklist** asks what tier of data feeds the model — the answer comes from here.
+- The **AI-System Risk Checklist** asks what tier of data feeds the model - the answer comes from here.

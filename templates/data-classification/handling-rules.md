@@ -39,4 +39,4 @@ What each classification means in day-to-day practice. Adapt the `[bracketed]` s
 
 ### Minimisation note
 
-The strongest control is not collecting or retaining the data at all. Before applying a tier, ask whether the field is needed — the cheapest Restricted record to protect is the one you never stored. This links directly to the **necessity & proportionality** section of the DPIA template.
+The strongest control is not collecting or retaining the data at all. Before applying a tier, ask whether the field is needed - the cheapest Restricted record to protect is the one you never stored. This links directly to the **necessity & proportionality** section of the DPIA template.

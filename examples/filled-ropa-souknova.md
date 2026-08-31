@@ -1,6 +1,6 @@
-# Worked Example — ROPA for "SoukNova"
+# Worked Example - ROPA for "SoukNova"
 
-> ⚠️ **Entirely fictional.** SoukNova is an invented e-commerce/fintech marketplace used to illustrate a completed ROPA. All names, data, and details are synthetic. Generate fake data (e.g. with [Faker](https://faker.readthedocs.io/)) for any demo — never use real records.
+> ⚠️ **Entirely fictional.** SoukNova is an invented e-commerce/fintech marketplace used to illustrate a completed ROPA. All names, data, and details are synthetic. Generate fake data (e.g. with [Faker](https://faker.readthedocs.io/)) for any demo - never use real records.
 
 **Scenario:** SoukNova is a UAE-based marketplace app. Buyers create accounts and pay; sellers onboard with KYC and receive payouts. Below are three representative processing activities, completed using the [ROPA template](../templates/ropa/ROPA-template.md).
 
@@ -14,7 +14,7 @@
 | Date of last review | 2026-06-15 |
 | Review cadence | Annually, or on material change |
 
-## Activity 1 — Buyer account & order processing
+## Activity 1 - Buyer account & order processing
 
 | Field | Value |
 |---|---|
@@ -28,13 +28,13 @@
 | Classification tier | Confidential |
 | Source of data | Collected from the individual |
 | Recipients / third parties | Delivery partner (processor); cloud hosting (processor) |
-| Cross-border transfers | Cloud region outside UAE — covered by DPA + SCCs |
+| Cross-border transfers | Cloud region outside UAE - covered by DPA + SCCs |
 | Retention | Account life + 24 months after closure, then deleted |
 | Security measures | TLS in transit, AES-256 at rest, role-based access, access logging |
 | Linked DPIA? | N/A (not high-risk) |
 | Last reviewed | 2026-06-15 |
 
-## Activity 2 — Seller KYC & payouts
+## Activity 2 - Seller KYC & payouts
 
 | Field | Value |
 |---|---|
@@ -44,7 +44,7 @@
 | Lawful basis | Legal obligation (AML) + contract; PDPL: legal obligation + contract |
 | Data-subject categories | Sellers (individuals & sole traders) |
 | Personal-data categories | Name, **Emirates ID number**, **IBAN**, trade licence, contact details |
-| Special / sensitive flag | **Yes** — national identifier + financial credentials |
+| Special / sensitive flag | **Yes** - national identifier + financial credentials |
 | Classification tier | **Restricted** |
 | Source of data | Collected from the individual; verified via KYC provider |
 | Recipients / third parties | KYC verification provider (processor); payments processor |
@@ -54,7 +54,7 @@
 | Linked DPIA? | **DPIA-2026-007** (large-scale processing of identifiers) |
 | Last reviewed | 2026-06-15 |
 
-## Activity 3 — AI support assistant (RAG over help-centre + tickets)
+## Activity 3 - AI support assistant (RAG over help-centre + tickets)
 
 | Field | Value |
 |---|---|
@@ -64,11 +64,11 @@
 | Lawful basis | Legitimate interests (efficient support), balancing test recorded; PDPL basis documented |
 | Data-subject categories | Buyers, sellers |
 | Personal-data categories | Name, email, ticket content (may reference order/payment details) |
-| Special / sensitive flag | Possible — tickets can contain financial details |
+| Special / sensitive flag | Possible - tickets can contain financial details |
 | Classification tier | Confidential (Restricted if payment data appears) |
 | Source of data | Existing support tickets + help-centre content |
-| Recipients / third parties | External LLM provider (processor) — **PII redacted before prompts** |
-| Cross-border transfers | LLM provider region — DPA + transfer safeguard; provider-training opt-out enabled |
+| Recipients / third parties | External LLM provider (processor) - **PII redacted before prompts** |
+| Cross-border transfers | LLM provider region - DPA + transfer safeguard; provider-training opt-out enabled |
 | Retention | Query/response logs retained 12 months for audit |
 | Security measures | PII redaction pre-prompt; full query/response audit log; source-citation tracking; human escalation path |
 | Linked DPIA? | **DPIA-2026-011** (new technology / AI) + **AI Risk Checklist** completed |
@@ -76,4 +76,4 @@
 
 ---
 
-Notice how Activity 3 pulls in all three artefacts — a ROPA row, a DPIA, *and* the AI-System Risk Checklist — and how its safeguards (redaction before prompts, audit logging, citation tracking) are exactly what a guardrailed RAG implementation must provide.
+Notice how Activity 3 pulls in all three artefacts - a ROPA row, a DPIA, *and* the AI-System Risk Checklist - and how its safeguards (redaction before prompts, audit logging, citation tracking) are exactly what a guardrailed RAG implementation must provide.

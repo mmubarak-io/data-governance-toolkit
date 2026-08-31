@@ -1,8 +1,8 @@
-# DPIA — Data Protection Impact Assessment
+# DPIA - Data Protection Impact Assessment
 
 A DPIA assesses and mitigates the privacy risk of a processing activity *before* you build it. It is required under **GDPR Article 35** when processing is "likely to result in a high risk" to individuals, and the **UAE PDPL** requires an equivalent assessment for high-risk processing. A DPIA is also the natural place to assess an AI system that touches personal data.
 
-> A `.docx` fillable version ships alongside this file. Complete the `[bracketed]` sections. Start with the trigger test in the [guide](DPIA-guide.md) — if no DPIA is required, record *that* decision and stop.
+> A `.docx` fillable version ships alongside this file. Complete the `[bracketed]` sections. Start with the trigger test in the [guide](DPIA-guide.md) - if no DPIA is required, record *that* decision and stop.
 
 ---
 
@@ -58,7 +58,7 @@ Score each risk: **Likelihood** (Low/Med/High) × **Severity** (Low/Med/High) �
 
 | Field | Detail |
 |---|---|
-| Residual risk acceptable? | `[Yes / No — if high residual risk remains, prior consultation with the regulator may be required]` |
+| Residual risk acceptable? | `[Yes / No - if high residual risk remains, prior consultation with the regulator may be required]` |
 | Conditions / actions before go-live | `[ ]` |
 | DPO recommendation | `[ ]` |
 | Decision & owner | `[approved/rejected, by whom, date]` |
