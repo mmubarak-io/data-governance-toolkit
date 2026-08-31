@@ -25,7 +25,6 @@ Nothing is tagged yet. The `v0.1.0` tag gets cut when the launch gate below clea
 ### Fixed
 - "Not legal advice" notice added to the six templates and guides that shipped without one.
 - The EU AI Act high-risk date is now hedged consistently in the checklist as well as the guide.
-- `.gitignore` no longer relies on case-insensitive matching for local-only notes.
 - Stale references to the removed diagram `.svg` export.
 
 ## [0.1.0] - content complete, not yet tagged
