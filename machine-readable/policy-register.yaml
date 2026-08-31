@@ -1,0 +1,65 @@
+# Policy register (schema v1)
+# The single source of truth linking each governance policy to (a) the law it
+# implements, (b) the toolkit artefact that DOCUMENTS it, and (c) the executable
+# check that could ENFORCE it. Policy IDs are shared with the companion repo
+# `ai-compliance-gates` so the "policy as documents" and "policy as code" halves
+# line up. Not legal advice.
+
+schema: data-governance-toolkit/policy-register/v1
+
+policies:
+  - policy_id: POL-PRIV-001
+    name: Data protection (in transit, at rest, pre-ingestion)
+    regulation: ["UAE PDPL Art. 20", "GDPR Art. 32"]
+    control: TLS enforced; encryption at rest; PII blocked before it enters a pipeline/model
+    documented_by: ["templates/data-classification/handling-rules.md", "templates/ropa/"]
+    enforced_by: ["ai-compliance-gates: pii-scan", "ai-compliance-gates: policy-check (TLS, https-only)"]
+
+  - policy_id: POL-PRIV-002
+    name: Data retention & storage limitation
+    regulation: ["UAE PDPL Art. 9", "GDPR Art. 5(1)(e)"]
+    control: Retention periods defined per purpose; disposal on trigger; audit-log retention
+    documented_by: ["templates/ropa/", "templates/data-classification/handling-rules.md"]
+    enforced_by: ["ai-compliance-gates: policy-check (retention rules)"]
+
+  - policy_id: POL-PRIV-003
+    name: Data residency / cross-border transfer
+    regulation: ["UAE PDPL Art. 22-23", "GDPR Ch. V"]
+    control: Transfers only to approved regions or under a documented safeguard
+    documented_by: ["templates/ropa/ (transfer field)", "docs/frameworks-crosswalk.md"]
+    enforced_by: ["ai-compliance-gates: policy-check (region allow-list)"]
+
+  - policy_id: POL-SEC-001
+    name: No public exposure
+    regulation: ["UAE PDPL Art. 20", "GDPR Art. 32"]
+    control: Public network access disabled; private access only
+    documented_by: ["templates/data-classification/handling-rules.md"]
+    enforced_by: ["ai-compliance-gates: policy-check (public_network_access)"]
+
+  - policy_id: POL-SEC-002
+    name: Access control
+    regulation: ["UAE PDPL Art. 20", "GDPR Art. 32"]
+    control: Role-based access; least privilege; secrets not in plaintext
+    documented_by: ["templates/data-classification/classification-matrix.md"]
+    enforced_by: ["ai-compliance-gates: policy-check (RBAC, shared-key disabled)"]
+
+  - policy_id: POL-PRIV-004
+    name: Audit logging & records of processing
+    regulation: ["UAE PDPL Art. 20", "GDPR Art. 30"]
+    control: Processing recorded (ROPA); access and AI query/response logged
+    documented_by: ["templates/ropa/", "templates/ai-system-risk-checklist/ (sec. 6)"]
+    enforced_by: ["ai-compliance-gates: policy-check (diagnostic settings)", "ai-compliance-gates: evidence-pack"]
+
+  - policy_id: POL-GOV-002
+    name: AI system documentation & risk
+    regulation: ["EU AI Act Annex IV, Art. 9/13/14", "UAE PDPL Art. 4-5"]
+    control: AI documentation complete; PII redacted before the model; human oversight
+    documented_by: ["templates/ai-system-risk-checklist/", "templates/dpia/"]
+    enforced_by: ["ai-compliance-gates: model-card-check", "ai-compliance-gates: pii-scan"]
+
+  - policy_id: POL-GOV-003
+    name: Accountability & evidence
+    regulation: ["GDPR Art. 5(2)", "EU AI Act Art. 12", "UAE PDPL Art. 20"]
+    control: Every run/decision leaves an auditor-facing record
+    documented_by: ["templates/breach-response/", "examples/"]
+    enforced_by: ["ai-compliance-gates: evidence-pack"]

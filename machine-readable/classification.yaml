@@ -1,0 +1,86 @@
+# Machine-readable data classification (schema v1)
+# The YAML twin of templates/data-classification/classification-matrix.md.
+# Consume this to drive tooling (e.g. a scanner or a CI gate) instead of
+# re-typing the matrix. Synthetic/illustrative only - not legal advice.
+
+schema: data-governance-toolkit/classification/v1
+
+tiers:
+  - id: public
+    name: Public
+    rank: 1
+    definition: Approved for release to anyone; no harm if disclosed.
+    examples: [marketing pages, published reports, open datasets]
+    controls:
+      encryption_at_rest: optional
+      encryption_in_transit: recommended
+      access: open
+      access_logging: false
+      external_sharing: allowed
+      cross_border: allowed
+
+  - id: internal
+    name: Internal
+    rank: 2
+    definition: Not for public release; low harm if disclosed. Default tier.
+    examples: [internal memos, org charts, non-sensitive project docs]
+    controls:
+      encryption_at_rest: recommended
+      encryption_in_transit: required
+      access: authenticated
+      access_logging: optional
+      external_sharing: approval-required
+      cross_border: allowed
+
+  - id: confidential
+    name: Confidential
+    rank: 3
+    definition: Sensitive business or personal data; meaningful harm if disclosed.
+    examples: [personal data, contracts, financials, non-special customer records]
+    controls:
+      encryption_at_rest: required
+      encryption_in_transit: required
+      access: role-based-need-to-know
+      access_logging: true
+      external_sharing: contract-and-safeguard-required
+      cross_border: allowed-with-safeguard
+
+  - id: restricted
+    name: Restricted
+    rank: 4
+    definition: Highest sensitivity; severe harm, legal, or regulatory consequences.
+    examples: [special-category data, Emirates ID, IBAN, card data, health, biometrics, secrets]
+    controls:
+      encryption_at_rest: required-strong
+      encryption_in_transit: required
+      access: explicit-allow-list
+      access_logging: immutable
+      external_sharing: prohibited-unless-authorised
+      cross_border: restricted-assess-first
+
+# Data that forces a minimum tier regardless of context (GCC-aware).
+# `regex` values are illustrative patterns for tooling, not validated PII rules.
+sensitive_patterns:
+  - id: ae_emirates_id
+    label: Emirates ID
+    min_tier: restricted
+    regex: '(?<!\d)784[- ]?(19|20)\d{2}[- ]?\d{7}[- ]?\d(?!\d)'
+  - id: ae_iban
+    label: UAE IBAN
+    min_tier: restricted
+    regex: '\bAE\d{2}[- ]?\d{3}[- ]?\d{16}(?!\d)'
+  - id: payment_card_pan
+    label: Payment card number (PAN)
+    min_tier: restricted
+  - id: health_data
+    label: Health / biometric / special-category
+    min_tier: restricted
+  - id: auth_secret
+    label: Password / API key / token
+    min_tier: restricted
+  - id: ordinary_pii
+    label: Name / email / phone / address
+    min_tier: confidential
+
+# Rule of inheritance: a dataset takes the tier of its most sensitive field.
+inheritance: most-sensitive-field-wins

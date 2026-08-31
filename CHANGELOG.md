@@ -6,6 +6,11 @@ All notable changes to this toolkit are documented here. Format loosely follows 
 
 > ⚠️ **Launch gate:** This repository stays private/local until the maintainer's pre-launch review (outside-activities / IP clearance) is complete. See the local launch checklist (not committed).
 
+### Added (enhancements)
+- **Breach Response** template + guide (`templates/breach-response/`) — notification playbook + register mapped to GDPR Art. 33/34 and PDPL.
+- Fully-worked **synthetic examples** for every artefact (`examples/`): DPIA, classification, and AI-risk checklist for "SoukNova" (joining the existing ROPA example).
+- **Machine-readable** layer (`machine-readable/`): `classification.yaml` + `policy-register.yaml`, sharing policy IDs with `ai-compliance-gates` (policy-as-documents ↔ policy-as-code).
+
 ### Added (English markdown — v0.1.0 content complete)
 - Repository skeleton: README, MIT LICENSE, DISCLAIMER, CONTRIBUTING.
 - **Data Classification Matrix** + handling rules + field guide.

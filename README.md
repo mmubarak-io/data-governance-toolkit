@@ -22,8 +22,9 @@ This is the operational side of governance: not the law, but the paperwork the l
 | **ROPA — Record of Processing Activities** | You need a GDPR Art. 30 / PDPL processing register. | [`templates/ropa/`](templates/ropa/) |
 | **DPIA — Data Protection Impact Assessment** | A project involves high-risk, large-scale, or new-technology processing. | [`templates/dpia/`](templates/dpia/) |
 | **AI-System Risk Checklist** | You're putting an AI/LLM system anywhere near personal or regulated data. | [`templates/ai-system-risk-checklist/`](templates/ai-system-risk-checklist/) |
+| **Breach Response** | You need a notification playbook + register for when a personal-data breach happens (GDPR Art. 33/34, PDPL). | [`templates/breach-response/`](templates/breach-response/) |
 
-Plus a [frameworks crosswalk](docs/frameworks-crosswalk.md) (GDPR ↔ UAE PDPL ↔ EU AI Act) and a [glossary](docs/glossary.md).
+Plus a [frameworks crosswalk](docs/frameworks-crosswalk.md) (GDPR ↔ UAE PDPL ↔ EU AI Act), a [glossary](docs/glossary.md), fully-worked **synthetic examples** for every artefact ([`examples/`](examples/)), and a **machine-readable** layer ([`machine-readable/`](machine-readable/)) — the classification tiers and policy register as YAML, sharing policy IDs with the companion [`ai-compliance-gates`](https://github.com/mmubarak-io/ai-compliance-gates) repo so the *policy as documents* here lines up with *policy as code* there.
 
 ## Architecture / how the pieces fit
 
