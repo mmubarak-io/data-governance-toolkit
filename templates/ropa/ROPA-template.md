@@ -6,6 +6,16 @@ Maintain one **row per processing activity** (e.g. "customer onboarding", "marke
 
 > Fill the `[bracketed]` fields. Pull the **Classification tier** straight from the [Data Classification Matrix](../data-classification/classification-matrix.md).
 
+**What this artefact evidences**
+
+| Regime | Obligation it speaks to |
+|---|---|
+| **GDPR** | Art. 30 - records of processing activities |
+| **UAE PDPL** | Accountability / records obligations |
+| **EU AI Act** | Indirect - supplies the processing record behind a high-risk system's data governance |
+
+Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); what is settled law versus a provisional reading is dated in [STATUS.md](../../STATUS.md).
+
 ## Register header (record once)
 
 | Field | Value |

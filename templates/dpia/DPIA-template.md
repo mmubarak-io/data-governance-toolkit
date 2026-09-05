@@ -4,6 +4,16 @@ A DPIA assesses and mitigates the privacy risk of a processing activity *before*
 
 > A `.docx` fillable version ships alongside this file. Complete the `[bracketed]` sections. Start with the trigger test in the [guide](DPIA-guide.md) - if no DPIA is required, record *that* decision and stop. **Not legal advice** - have the completed assessment reviewed by your DPO or counsel.
 
+**What this artefact evidences**
+
+| Regime | Obligation it speaks to |
+|---|---|
+| **GDPR** | Art. 35 - impact assessment for high-risk processing |
+| **UAE PDPL** | Impact-assessment obligation for high-risk processing |
+| **EU AI Act** | Risk management for high-risk systems - run alongside the [AI risk checklist](../ai-system-risk-checklist/ai-risk-checklist.md) |
+
+Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); what is settled law versus a provisional reading is dated in [STATUS.md](../../STATUS.md).
+
 ---
 
 ## 1. Project summary

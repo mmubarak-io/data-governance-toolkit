@@ -6,9 +6,9 @@ A quick map of how the toolkit's artefacts satisfy obligations across the three 
 
 | | **GDPR** | **UAE PDPL** | **EU AI Act** |
 |---|---|---|---|
-| Instrument | Regulation (EU) 2016/679 | Federal Decree-Law No. 45 of 2021 + Executive Regulations | Regulation (EU) 2024/1689 |
+| Instrument | Regulation (EU) 2016/679 | Federal Decree-Law No. 45 of 2021 | Regulation (EU) 2024/1689 |
 | Scope | Personal data of people in the EU | Personal data of UAE residents (federal; free zones like DIFC/ADGM have their own laws) | AI systems placed on the EU market |
-| Status | In force since 2018 | In force; Executive Regulations tightening compliance now | High-risk obligations phasing in (toward late 2027) |
+| Status | In force since 2018 | In force; Executive Regulations not yet published (see [STATUS.md](../STATUS.md)) | High-risk obligations phasing in (toward late 2027) |
 | Regulator | National DPAs | UAE Data Office | National market-surveillance + EU AI Office |
 
 ## Obligation → artefact map
@@ -30,7 +30,7 @@ A quick map of how the toolkit's artefacts satisfy obligations across the three 
 
 ## How to read it
 
-- **If you operate in the UAE**, the PDPL is your anchor - its Executive Regulations are tightening compliance and enforcement is ramping up - but building to GDPR-level artefacts means you're ready for both, plus EU customers.
+- **If you operate in the UAE**, the PDPL is your anchor. Its Executive Regulations have not yet been published; when they are, the law allows a further six months to adjust. Building to GDPR-level artefacts now means you're ready for both, plus EU customers.
 - **If you build AI**, the EU AI Act adds obligations *on top of* data-protection law; an AI system handling personal data needs the privacy artefacts (ROPA, DPIA) **and** the AI controls (checklist).
 - **Free zones:** DIFC (DP Law 2020) and ADGM have their own data-protection regimes that broadly track GDPR; check which applies to your entity.
 

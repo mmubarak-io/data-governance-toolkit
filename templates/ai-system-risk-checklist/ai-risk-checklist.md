@@ -6,6 +6,16 @@ Each item is tagged with the **EU AI Act** risk dimension it speaks to. Items ma
 
 > Work top to bottom. Any unchecked box is a risk you're accepting - record why. Run this **alongside** a [DPIA](../dpia/DPIA-template.md), not instead of one.
 
+**What this artefact evidences**
+
+| Regime | Obligation it speaks to |
+|---|---|
+| **EU AI Act** | Risk management, data governance, transparency, human oversight, logging, robustness |
+| **GDPR** | Art. 22 (automated decisions); supports the Art. 35 DPIA |
+| **UAE PDPL** | Automated-processing and high-risk processing obligations |
+
+Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); what is settled law versus a provisional reading is dated in [STATUS.md](../../STATUS.md).
+
 ## 1. Prohibited-use screen (do this first)
 
 - [ ] The system does **not** perform a prohibited practice (social scoring, untargeted facial-image scraping, manipulative or exploitative techniques, certain biometric categorisation). *If it might, stop and get legal review.*

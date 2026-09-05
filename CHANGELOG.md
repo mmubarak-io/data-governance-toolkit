@@ -2,11 +2,19 @@
 
 All notable changes to this toolkit are documented here. Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
-Nothing is tagged yet. The `v0.1.0` tag gets cut when the launch gate below clears.
+## [1.0.0] - 2026-09-05
 
-## [Unreleased]
+First public release.
 
-> ⚠️ **Launch gate:** This repository stays private/local until the maintainer's pre-launch review (outside-activities / IP clearance) is complete. See the local launch checklist (not committed).
+### Added
+- **`STATUS.md`** - a dated regulatory-currency page separating settled law from provisional readings, per regime. Reviewed 2026-09-05.
+- A **"What this artefact evidences"** mapping table at the top of all five templates, so the GDPR / UAE PDPL / EU AI Act mapping is visible in the artefact you're filling in, not only in the crosswalk.
+- A dated **roadmap** in the README (Arabic v1.1; Saudi PDPL and DIFC/ADGM mapping columns in v1.2).
+
+### Fixed
+- **Corrected the UAE PDPL Executive Regulations claim.** Earlier wording in `README.md`, `docs/frameworks-crosswalk.md`, and `docs/glossary.md` implied the Executive Regulations had been issued and were tightening compliance. They have not been published, as far as can be verified against primary sources. The framing is now the six-month compliance window that opens when they are issued. See `STATUS.md`.
+
+## [0.1.0] - 2026-09-05
 
 ### Added
 - **Breach Response** template + guide (`templates/breach-response/`) - notification playbook + register mapped to GDPR Art. 33/34 and PDPL.

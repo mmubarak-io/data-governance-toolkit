@@ -1,8 +1,8 @@
 # Data Governance Toolkit
 
-**Practical, ready-to-use data-governance templates for regulated teams - bilingual (English now, العربية next).**
+**Practical, ready-to-use data-governance templates for regulated teams - one artefact, mapped to GDPR, UAE PDPL, and the EU AI Act at once.**
 
-> Built for the compliance reality you're actually facing. The **UAE PDPL** is in force and its Executive Regulations are sharpening what compliance requires, with the UAE Data Office issuing guidance and enforcement ramping up; the **EU AI Act**'s high-risk obligations are phasing in. This toolkit gives data leads, DPOs, and engineers the operational artefacts those regimes ask for - ROPA, DPIA, data classification, and an AI-system risk checklist - as fill-in-the-blanks documents you can use on Monday.
+> Built for the compliance reality you're actually facing. The **UAE PDPL** is in force, but its Executive Regulations have not yet been published - and once they are, organisations get six months to comply. The artefacts below are what you build in the meantime. Meanwhile the **EU AI Act**'s high-risk obligations are phasing in. This toolkit gives data leads, DPOs, and engineers the operational artefacts those regimes ask for - ROPA, DPIA, data classification, and an AI-system risk checklist - as fill-in-the-blanks documents you can use on Monday.
 
 This is the operational side of governance: not the law, but the paperwork the law expects you to have.
 
@@ -50,13 +50,22 @@ The ROPA register with the synthetic **SoukNova** example filled in - note how a
 
 ## Frameworks covered
 
-`GDPR (EU 2016/679)` · `UAE PDPL (Federal Decree-Law No. 45 of 2021 + Executive Regulations)` · `EU AI Act (Regulation 2024/1689)`
+`GDPR (EU 2016/679)` · `UAE PDPL (Federal Decree-Law No. 45 of 2021)` · `EU AI Act (Regulation 2024/1689)`
 
-See the [crosswalk](docs/frameworks-crosswalk.md) for how a single artefact satisfies obligations across regimes.
+See the [crosswalk](docs/frameworks-crosswalk.md) for how a single artefact satisfies obligations across regimes, and [`STATUS.md`](STATUS.md) for what is settled law versus a provisional reading - dated, and reviewed as regulations move.
 
-## Bilingual
+## Roadmap
 
-English templates are first. Arabic (العربية) versions ship as a parallel `-ar` file beside each English file - in progress. ⭐ the repo to follow the Arabic release.
+Dated, so you can see what's moving:
+
+| Next | What | Status |
+|---|---|---|
+| **v1.1** | **Arabic (العربية)** - a parallel `-ar` file beside every English file, using the PDPL's own Arabic terms | In progress |
+| v1.2 | **Saudi PDPL** mapping column - fully in force, and the Arabic work carries straight over | Planned |
+| v1.2 | **DIFC / ADGM** mapping column - the free-zone regimes most GCC financial entities actually sit under | Planned |
+| Later | ISO 42001 / NIST AI RMF cross-references on the AI risk checklist | Considering |
+
+⭐ the repo to follow the Arabic release. Corrections against the regulations are the most useful contribution - see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Contributing
 

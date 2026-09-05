@@ -4,6 +4,16 @@ A four-tier classification scheme. Classification is the backbone of governance:
 
 > Replace the `[bracketed]` examples with your organisation's own. Keep the tier definitions stable - they should rarely change. **Not legal advice** - validate the tiers against the regulations that apply to you.
 
+**What this artefact evidences**
+
+| Regime | Obligation it speaks to |
+|---|---|
+| **GDPR** | Art. 5 (minimisation, purpose limitation) and Art. 32 (security of processing) |
+| **UAE PDPL** | Core principles and security obligations |
+| **EU AI Act** | Data governance for high-risk systems |
+
+Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); what is settled law versus a provisional reading is dated in [STATUS.md](../../STATUS.md).
+
 ## The four tiers
 
 | Tier | Definition | Typical examples | Who can access | Breach impact |

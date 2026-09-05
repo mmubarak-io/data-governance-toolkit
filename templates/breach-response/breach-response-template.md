@@ -4,6 +4,16 @@ A personal-data breach is discovered on your worst day, not your calendar's. Thi
 
 > Fill the `[bracketed]` fields when adopting this, and again per incident. Pull the **classification tier** of affected data from the [classification matrix](../data-classification/classification-matrix.md). See the [guide](breach-response-guide.md) for the notification decision and timelines. **Not legal advice** - confirm the exact triggers and deadlines that apply to you with counsel.
 
+**What this artefact evidences**
+
+| Regime | Obligation it speaks to |
+|---|---|
+| **GDPR** | Arts. 33-34 - authority within 72h; individuals where high risk |
+| **UAE PDPL** | Notify the UAE Data Office; inform individuals where their data is prejudiced |
+| **EU AI Act** | Serious-incident reporting for high-risk systems |
+
+Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); what is settled law versus a provisional reading is dated in [STATUS.md](../../STATUS.md).
+
 ---
 
 ## Part A - Response playbook (per incident)
