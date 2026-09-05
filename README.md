@@ -1,5 +1,12 @@
 # Data Governance Toolkit
 
+[![checks](https://github.com/mmubarak-io/data-governance-toolkit/actions/workflows/checks.yml/badge.svg)](https://github.com/mmubarak-io/data-governance-toolkit/actions/workflows/checks.yml)
+[![release](https://img.shields.io/github/v/tag/mmubarak-io/data-governance-toolkit?label=release&color=0b7285)](https://github.com/mmubarak-io/data-governance-toolkit/releases)
+[![licence: MIT](https://img.shields.io/badge/licence-MIT-1864ab)](LICENSE)
+[![frameworks: GDPR · UAE PDPL · EU AI Act](https://img.shields.io/badge/frameworks-GDPR%20%C2%B7%20UAE%20PDPL%20%C2%B7%20EU%20AI%20Act-495057)](docs/frameworks-crosswalk.md)
+[![status: reviewed 2026-09-05](https://img.shields.io/badge/regulatory%20currency-reviewed%202026--09--05-2b8a3e)](STATUS.md)
+[![not legal advice](https://img.shields.io/badge/not%20legal%20advice-c92a2a)](DISCLAIMER.md)
+
 **Practical, ready-to-use data-governance templates for regulated teams - one artefact, mapped to GDPR, UAE PDPL, and the EU AI Act at once.**
 
 > Built for the compliance reality you're actually facing. The **UAE PDPL** is in force, but its Executive Regulations have not yet been published - and once they are, organisations get six months to comply. The artefacts below are what you build in the meantime. Meanwhile the **EU AI Act**'s high-risk obligations are phasing in. This toolkit gives data leads, DPOs, and engineers the operational artefacts those regimes ask for - ROPA, DPIA, data classification, and an AI-system risk checklist - as fill-in-the-blanks documents you can use on Monday.
@@ -18,7 +25,7 @@ This is the operational side of governance: not the law, but the paperwork the l
 
 | Template | Use it when… | Files |
 |---|---|---|
-| **Data Classification Matrix** | You need a shared definition of Public / Internal / Confidential / Restricted and the handling rules for each. | [`templates/data-classification/`](templates/data-classification/) |
+| **Data Classification Matrix** | You need a shared definition of 🟢 Public / 🔵 Internal / 🟠 Confidential / 🔴 Restricted and the handling rules for each. | [`templates/data-classification/`](templates/data-classification/) |
 | **ROPA - Record of Processing Activities** | You need a GDPR Art. 30 / PDPL processing register. | [`templates/ropa/`](templates/ropa/) |
 | **DPIA - Data Protection Impact Assessment** | A project involves high-risk, large-scale, or new-technology processing. | [`templates/dpia/`](templates/dpia/) |
 | **AI-System Risk Checklist** | You're putting an AI/LLM system anywhere near personal or regulated data. | [`templates/ai-system-risk-checklist/`](templates/ai-system-risk-checklist/) |

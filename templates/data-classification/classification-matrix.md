@@ -18,10 +18,10 @@ Full mapping in the [frameworks crosswalk](../../docs/frameworks-crosswalk.md); 
 
 | Tier | Definition | Typical examples | Who can access | Breach impact |
 |---|---|---|---|---|
-| **Public** | Approved for release to anyone; no harm if disclosed. | Marketing pages, published reports, open datasets. | Anyone. | None / negligible. |
-| **Internal** | Not for public release; low harm if disclosed. Default tier for ordinary business data. | Internal memos, org charts, non-sensitive project docs. | All employees / contractors under NDA. | Low. |
-| **Confidential** | Sensitive business or personal data; meaningful harm if disclosed. | Personal data (names, emails, phone), contracts, financials, non-special-category customer records. | Named teams / roles on a need-to-know basis. | Moderate to high (incl. regulatory exposure under PDPL/GDPR). |
-| **Restricted** | Highest sensitivity; severe harm, legal, or regulatory consequences if disclosed. | Special-category / sensitive personal data, authentication secrets, **Emirates ID numbers, IBANs, full payment-card data, health data, biometrics**. | Strictly limited, explicitly authorised individuals; access logged. | Severe - regulatory penalties, fraud, individual harm. |
+| 🟢 **Public** | Approved for release to anyone; no harm if disclosed. | Marketing pages, published reports, open datasets. | Anyone. | None / negligible. |
+| 🔵 **Internal** | Not for public release; low harm if disclosed. Default tier for ordinary business data. | Internal memos, org charts, non-sensitive project docs. | All employees / contractors under NDA. | Low. |
+| 🟠 **Confidential** | Sensitive business or personal data; meaningful harm if disclosed. | Personal data (names, emails, phone), contracts, financials, non-special-category customer records. | Named teams / roles on a need-to-know basis. | Moderate to high (incl. regulatory exposure under PDPL/GDPR). |
+| 🔴 **Restricted** | Highest sensitivity; severe harm, legal, or regulatory consequences if disclosed. | Special-category / sensitive personal data, authentication secrets, **Emirates ID numbers, IBANs, full payment-card data, health data, biometrics**. | Strictly limited, explicitly authorised individuals; access logged. | Severe - regulatory penalties, fraud, individual harm. |
 
 ## Controls by tier
 
